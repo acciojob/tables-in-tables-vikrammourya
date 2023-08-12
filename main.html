@@ -4,11 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/> 
   </head>
-  <body>
-    <table style="width: 100%; height: 100%">
-      <!-- Your code here -->
+ <body>
+    <table border="1" style="height: 100%; width: 100%">
+      <!--total it has 2 row -->
+      <tr>
+        <!--this is 1 row -->
+        <td style="width:50%">
+          <!--Nested table 2-->
+          <table border="1" align="center" style="width: 100%;">
+            <tr>
+              <th colspan="2">Nested Table 2</th>
+            </tr>
+            <tr>
+              <th>Column 1</th>
+              <th>Column 2</th>
+				 
+            </tr>
+            <tr align = "center">
+              <td>abc</td>
+              <td>def</td>
+            </tr>
+          </table>
+        </td>
+        <th>
+          <!--Nested Table 1-->
+          <table border="1" align="center">
+            <tr>
+              <th style="width: 50%">Nested Table 1</th>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                </ul>
+              </td>
+            </tr>
+          </table>
+        </th>
+      </tr>
+      <tr>
+        <!--this is 2nd row-->
+        <td>
+          <!--Nested table 3-->
+          <table border="1" align="center" style="width:100%">
+            <tr>
+              <th colspan="2">Nested Table 3</th>
+            </tr>
+            <tr>
+              <td><a href="#">Nested Table</td>
+              <td>Demo Continued</td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <!--Nested table 4-->
+          <table border="1" align="center" style="width:100%">
+            <tr>
+              <th>Nested Table 4</th>
+            </tr>
+            <tr align = "center">
+              <td style="background-color: black; color: white">HTML</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
     </table>
   </body>
-</html>
